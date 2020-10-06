@@ -10,7 +10,7 @@ function existsWithinList($listL,$dataY){
 }
 
 function printBool($bool){
-    echo $bool=== "true" ? "True" : false .PHP_EOL ;
+    echo $bool === true ? "True" : "False" .PHP_EOL ;
 }
 
 $sampleList = [3,10,23,3,4,50,2,3,4,18,6,1,-2];
