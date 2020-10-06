@@ -3,11 +3,6 @@ def printDuplicates(inputList):
 
     for i in range(int(len(inputList))):
         hashmap[str(inputList[i])] = 1 if str(inputList[i]) not in hashmap else hashmap[str(inputList[i])] + 1 
-        '''if str(inputList[i]) not in hashmap:
-            hashmap[str(inputList[i])] = 1
-        else:
-            hashmap[str(inputList[i])] = hashmap[str(inputList[i])] + 1 '''
-
     keys = list(hashmap.keys())
     print(keys)
     return hashmap
