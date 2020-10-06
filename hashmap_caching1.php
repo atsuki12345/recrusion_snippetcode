@@ -1,5 +1,5 @@
 <?php
-// PHPで開発しましょう。
+// PHPで開発しましょう
 function existsWithinList($listL,$dataY){
     $hashMap = array();
 
@@ -9,7 +9,11 @@ function existsWithinList($listL,$dataY){
     return is_null($hashMap[$dataY]) ? false : true;
 }
 
+function printBool($bool){
+    echo $bool=== "true" ? "True" : false .PHP_EOL ;
+}
+
 $sampleList = [3,10,23,3,4,50,2,3,4,18,6,1,-2];
-echo var_export(existsWithinList($sampleList,23)) ."\n";
-echo var_export(existsWithinList($sampleList,-2)) ."\n";
-echo var_export(existsWithinList($sampleList,100)) ."\n";
+echo printBool(existsWithinList($sampleList,23)) .PHP_EOL;
+echo printBool(existsWithinList($sampleList,-2)) .PHP_EOL;
+echo printBool(existsWithinList($sampleList,100)) .PHP_EOL;
